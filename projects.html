@@ -1,0 +1,28 @@
+---
+layout: default
+contentclass: bg-projects
+panel: projects
+projects:
+  - title: Project One
+    picpath: assets/project1.jpg
+  - title: Project Two
+    picpath: assets/project2.jpg
+  - title: Project Three
+    picpath: assets/project3.jpg
+  - title: Project Four
+    picpath: assets/project4.jpg
+  - title: Project Five
+    picpath: assets/project5.jpg
+---
+
+<ul>
+  {% for project in page.projects %}
+  <li><a href="" class="gallery-pic"><h2>{{project.title}}</h2>
+    <div class="panel-img" style="background-image: url('{{project.picpath}}')"></div>
+      </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="panel-img panel-projects">
+</div>

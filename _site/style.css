@@ -526,12 +526,7 @@ svg {
   opacity: 1;
   z-index: 1;
 }
-.panel-projects:hover {
-  opacity: 1;
-  z-index: 2;
-  transition: 0s;
-}
-.panel-home:hover {
+.panel-projects:hover, .panel-home:hover {
   opacity: 1;
   z-index: 2;
   transition: 0s;

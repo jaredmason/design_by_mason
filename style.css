@@ -86,6 +86,9 @@ display: none;
 .list {
   z-index:10;
 }
+.italics {
+  text-style: italic;
+}
 
 .no-padding { padding: 0; }
 
@@ -151,8 +154,8 @@ h1, h2, h4 {
 }
 h1 {
   display: inline;
-  font-size: 2.6rem;
-  line-height: 1.1;
+  font-size: 2.1rem;
+  line-height: 1.15;
   transition: all 400ms;
 }
 h2 {
@@ -341,7 +344,7 @@ svg {
     padding-top: 30vh;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     transition: all 400ms;
   }
   .showhide h4 {
@@ -369,7 +372,7 @@ svg {
     height: 5vw;
   }
   h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     transition: all 400ms;
   }
   .mobile-menu-wrap .menu-item a {
@@ -392,6 +395,7 @@ svg {
 @media (min-width: 820px){
   .header-wrap .menu .menu-item a {
     font-size: calc(0.9vw + 8.5px);}
+    }
 }
 @media (min-width: 540px){
   .header-wrap .menu .menu-item a {
@@ -523,6 +527,11 @@ svg {
   z-index: 1;
 }
 .panel-projects:hover {
+  opacity: 1;
+  z-index: 2;
+  transition: 0s;
+}
+.panel-home:hover {
   opacity: 1;
   z-index: 2;
   transition: 0s;
